@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VESIT College</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .hero-section {
+            background: url('https://theknowledgereview.com/wp-content/uploads/2018/10/Vivekanand_Education_Society_s_Institute_of_Technology.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        .feature-icon {
+            font-size: 3rem;
+            color: #007bff;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark text-bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="#">VESIT</a>
+
+    <!-- Search Form -->
+    <form class="d-flex ms-auto me-auto w-50" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light" type="submit">Search</button>
+    </form>
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+        
+        <!-- Courses Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Courses
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+            <li><a class="dropdown-item" href="#">Computer Engineering</a></li>
+            <li><a class="dropdown-item" href="#">Electronics Engineering</a></li>
+            <li><a class="dropdown-item" href="#">Mechanical Engineering</a></li>
+            <li><a class="dropdown-item" href="#">Information Technology</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">More Programs</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#admissions">Admissions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section text-center">
+  <div class="container">
+    <h1>Welcome to VESIT</h1>
+    <p class="lead">Shaping the future with world-class education.</p>
+    <a href="#admissions" class="btn btn-custom btn-lg mt-4">Apply Now</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5" style="background-color: #90CAF9">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>About VESIT</h2>
+        <p>VESIT is a premier institution offering cutting-edge education in various fields of engineering. Our state-of-the-art facilities, experienced faculty, and industry-oriented programs ensure that students are well-prepared for successful careers.</p>
+        <p>Join us and be part of a vibrant learning community.</p>
+      </div>
+
+      <div class="col-md-6">
+        <!-- Bootstrap Carousel -->
+        <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <!-- Carousel Images -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://vesit.ves.ac.in/storage/audi2.JPG" class="d-block w-100 img-fluid rounded shadow" alt="About VESIT 1" style="width: 500px; height: 400px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://vesit.ves.ac.in/storage/amphi2.JPG" class="d-block w-100 img-fluid rounded shadow" alt="About VESIT 2"  style="width: 500px; height: 400px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://vesit.ves.ac.in/storage/lab2.JPG" class="d-block w-100 img-fluid rounded shadow" alt="About VESIT 3"  style="width: 500px; height: 400px;">
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Courses Section -->
+<section id="courses" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Courses</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 shadow">
+          <img src="./comp sci.jpg" class="card-img-top" alt="Computer Engineering" style="width: 355px; height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">Computer Engineering</h5>
+            <p class="card-text">Learn the fundamentals of computer science and software engineering, and develop the skills needed to excel in the tech industry.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow">
+          <img src="./electro engi.jpg" class="card-img-top" alt="Electronics Engineering" style="width: 355px; height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">Electronics Engineering</h5>
+            <p class="card-text">Dive into the world of circuits, systems, and electronics with our comprehensive program in electronics engineering.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow">
+          <img src="./mecha engi.jpg" class="card-img-top" alt="Mechanical Engineering" style="width: 355px; height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">Mechanical Engineering  <span class="badge text-bg-secondary">New</span></h5>
+            <p class="card-text">Explore the principles of mechanics, thermodynamics in our dynamic mechanical engineering program.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-5" style="background-color: #90CAF9">
+  <div class="container">
+    <h2 class="text-center mb-4">Why Choose VESIT?</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <i class="fas fa-graduation-cap feature-icon mb-3"></i>
+        <h4>Expert Faculty</h4>
+        <p>Our faculty members are industry leaders and academicians who bring a wealth of experience to the classroom.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-laptop-code feature-icon mb-3"></i>
+        <h4>Cutting-Edge Technology</h4>
+        <p>We provide access to the latest technology and tools, ensuring our students are well-prepared for the future.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-briefcase feature-icon mb-3"></i>
+        <h4>Career Opportunities</h4>
+        <p>With strong industry connections, we offer excellent career opportunities for our graduates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Accordion Section -->
+<section id="faq" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion accordion-flush" id="faqAccordion">
+      <!-- Accordion Item 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            What courses does VESIT offer?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            VESIT offers a wide range of engineering courses such as Computer Engineering, Electronics Engineering, Mechanical Engineering, and Information Technology. Our programs are designed to provide students with both theoretical and practical knowledge.
+          </div>
+        </div>
+      </div>
+      <!-- Accordion Item 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How can I apply for admission to VESIT?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can apply for admission by visiting our admissions page. The process includes filling out an application form, submitting necessary documents, and participating in entrance exams or interviews based on the chosen program.
+          </div>
+        </div>
+      </div>
+      <!-- Accordion Item 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            What facilities are available at VESIT?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            VESIT offers state-of-the-art labs, libraries, sports facilities, and innovation hubs to enhance learning. We also have an active placement cell, student societies, and events to foster all-around development.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-5" style="background-color: #90CAF9">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Get in Touch</h5>
+        <p>Address: 123 College Avenue, City, State</p>
+        <p>Email: info@vesit.com</p>
+        <p>Phone: +1 234 567 890</p>
+      </div>
+      <div class="col-md-6">
+        <form class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            <div class="invalid-feedback">Please provide your name.</div>
+          </div>
+          
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            <div class="invalid-feedback">Please provide a valid email address.</div>
+          </div>
+          
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Type your message here" required></textarea>
+            <div class="invalid-feedback">Please enter a message.</div>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>© 2024 VESIT College. All Rights Reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS (for responsiveness, but no JS needed for functionality) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
